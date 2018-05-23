@@ -1,0 +1,4 @@
+AllCops:
+  Exclude:
+    # For teamci/builder
+    - 'test/fixtures/**/*.rb'
