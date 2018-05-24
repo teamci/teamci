@@ -2,3 +2,17 @@ AllCops:
   Exclude:
     # For teamci/builder
     - 'test/fixtures/**/*.rb'
+
+Layout/IndentHash:
+  EnforcedStyle: consistent
+
+Layout/SpaceInsideArrayLiteralBrackets:
+  EnforcedStyle: compact
+
+Style/Documentation:
+  Enabled: false
+
+# Disable this because it doesn't handle the style where {} is required
+# when the hash/key word args span multiple lines.
+Style/BracesAroundHashParameters:
+  Enabled: false
