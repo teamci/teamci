@@ -2,4 +2,14 @@
 
 set -euo pipefail
 
-git ls-files | grep -vF 'fixtures'
+declare scratch
+scratch="$(mktemp)"
+
+while read -r file; do
+	if head -n 1 "${file}" | grep -qF 'bash'; then
+		echo "${file}" >> "${scratch}"
+	fi
+done
+
+# Ignore fixtures in teamci/builder
+grep -vF 'fixtures' "${scratch}"
