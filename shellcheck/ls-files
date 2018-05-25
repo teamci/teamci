@@ -9,7 +9,7 @@ while read -r file; do
 	if head -n 1 "${file}" | grep -qF 'bash'; then
 		echo "${file}" >> "${scratch}"
 	fi
-done
+done < <(git ls-files)
 
 # Ignore fixtures in teamci/builder
 grep -vF 'fixtures' "${scratch}"
