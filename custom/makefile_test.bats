@@ -5,7 +5,7 @@ setup() {
 }
 
 @test "make check exists" {
-	run make -q clean
+	run make -q check
 
 	[ $status -ne 2 ]
 }
