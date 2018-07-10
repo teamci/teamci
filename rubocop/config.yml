@@ -12,6 +12,10 @@ Layout/SpaceInsideArrayLiteralBrackets:
 Style/Documentation:
   Enabled: false
 
+# This seems buggy. It's giving warnings on class declarations
+Layout/SpaceBeforeFirstArg:
+  Enabled: false
+
 # Disable this because it doesn't handle the style where {} is required
 # when the hash/key word args span multiple lines.
 Style/BracesAroundHashParameters:
