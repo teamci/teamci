@@ -1,0 +1,4 @@
+<?xml version="1.0"?>
+<ruleset name="TeamCI Standards" namespace="TeamCI">
+	<exclude-pattern>*/test/fixtures/*</exclude-pattern>
+</ruleset>
