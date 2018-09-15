@@ -21,3 +21,8 @@ Layout/SpaceBeforeFirstArg:
 # when the hash/key word args span multiple lines.
 Style/BracesAroundHashParameters:
   Enabled: false
+
+# Recommending warn is different than stderr.puts. Also, I prefer 
+# to be explicit where output goes.
+Style/StderrPuts:
+  Enabled: false
