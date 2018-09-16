@@ -2,4 +2,4 @@
 
 set -euo pipefail
 
-find . -type f -iname '*.yml' -print | grep -VF 'fixtures'
+find . -type f -iname '*.yml' -print | grep -vF 'fixtures'
