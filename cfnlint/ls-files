@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+
+set -euo pipefail
+
+shopt -s globstar
+shopt -s nullglob
+
+echo ./**/*.{yaml,yml} | grep -VF 'fixtures'
