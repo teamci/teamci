@@ -2,7 +2,4 @@
 
 set -euo pipefail
 
-shopt -s globstar
-shopt -s nullglob
-
-echo ./**/*.{yaml,yml} | grep -VF 'fixtures'
+find . -type f -iname '*.yml' -print | grep -VF 'fixtures'
