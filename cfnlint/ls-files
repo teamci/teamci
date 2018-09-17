@@ -2,4 +2,6 @@
 
 set -euo pipefail
 
-find . -type f -iname '*.yml' -print | grep -vF 'fixtures'
+find . -type f -iname '*.yml' -print \
+	| grep -vF 'fixtures' \
+	| xargs is-template.py
