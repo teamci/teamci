@@ -1,10 +1,10 @@
 ---
 checks:
-  - name: 'welcome',
-    title: 'Welcome to TeamCI',
-    image: 'teamci/welcome',
+  - name: 'welcome'
+    title: 'Welcome to TeamCI'
+    image: 'teamci/welcome'
     summary: 'How to use TeamCI'
-  - name: 'rubocop',
-    title: 'Rubocop',
-    image: 'teamci/rubocop',
+  - name: 'rubocop'
+    title: 'Rubocop'
+    image: 'teamci/rubocop'
     summary: 'Ruby code linting'
