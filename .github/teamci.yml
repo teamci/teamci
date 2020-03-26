@@ -8,3 +8,7 @@ checks:
     title: 'Rubocop'
     image: 'teamci/rubocop'
     summary: 'Ruby code linting'
+  - name: 'editorconfig'
+    title: 'Editorconfig'
+    image: 'teamci/editorconfig'
+    summary: All files covered by `.editorconfig` rules
