@@ -12,3 +12,7 @@ checks:
     title: 'Editorconfig'
     image: 'teamci/editorconfig'
     summary: All files covered by `.editorconfig` rules
+  - name: 'shellcheck'
+    title: 'ShellCheck'
+    image: 'teamci/shellcheck'
+    summary: Files pass mandatory `shellcheck`
